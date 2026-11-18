@@ -1,0 +1,1096 @@
+/* ==========================================================================
+   CHELAMSETTY CHAITANYA - EDITORIAL PORTFOLIO DESIGN SYSTEM
+   Faithfully inspired by the high-fashion editorial reference
+   ========================================================================== */
+
+:root {
+  /* Warm editorial linen/cream palette */
+  --bg-base: #F5F1E9;
+  --bg-card: #FAF8F2;
+  --bg-card-contrast: #FFFFFF;
+  
+  /* Primary & Accent colors */
+  --color-text-main: #1A1918;
+  --color-text-muted: #6E6860;
+  --color-text-light: #948E85;
+  --color-terracotta: #C36746;
+  --color-terracotta-dark: #A95333;
+  --color-terracotta-light: #E88E6E;
+  --color-terracotta-tint: #F3EAE5;
+  
+  /* Lines and borders */
+  --border-line: rgba(26, 25, 24, 0.16);
+  --border-subtle: rgba(26, 25, 24, 0.08);
+
+  /* Fonts */
+  --font-display: 'Bebas Neue', 'Big Shoulders Display', Impact, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Caveat', cursive;
+
+  /* Layout */
+  --max-width: 1240px;
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-base);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-base);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Subtle editorial paper grain texture */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 0);
+  background-size: 20px 20px;
+  z-index: 9999;
+}
+
+/* Outer layout container with vertical sidebars */
+.portfolio-canvas {
+  position: relative;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 24px 44px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Vertical Rotated Edge Margins matching reference */
+.vertical-sidebar {
+  position: absolute;
+  top: 90px;
+  bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  user-select: none;
+  z-index: 10;
+}
+
+.left-sidebar {
+  left: 12px;
+}
+
+.right-sidebar {
+  right: 12px;
+}
+
+.v-separator {
+  color: var(--color-terracotta);
+  font-size: 0.8rem;
+}
+
+/* Main Content Column */
+.main-content {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   1. TOP NAVIGATION BAR
+   -------------------------------------------------------------------------- */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-main);
+}
+
+.asterisk-symbol {
+  color: var(--color-terracotta);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.nav-tag {
+  letter-spacing: 0.16em;
+}
+
+.nav-right .nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-terracotta);
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-right .nav-link:hover {
+  color: var(--color-terracotta-dark);
+  transform: translateX(4px);
+}
+
+.nav-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover .nav-arrow {
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   2. GIANT "PORTFOLIO" TITLE
+   -------------------------------------------------------------------------- */
+.banner-title-section {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.giant-portfolio-title {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 17vw, 13.5rem);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: 0.04em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  margin: 0;
+  user-select: none;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   3. HERO SECTION (Editorial Overlap)
+   -------------------------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  margin-top: -38px; /* Overlaps with bottom of PORTFOLIO title */
+  padding-bottom: 25px;
+  z-index: 3;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Left Hero Column */
+.hero-bio-col {
+  padding-right: 15px;
+  position: relative;
+  z-index: 4;
+}
+
+.hero-greeting {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.hero-name {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.8vw, 4.2rem);
+  font-weight: 700;
+  line-height: 0.98;
+  color: var(--color-text-main);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-role-pill {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--color-terracotta);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-intro-text {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  max-width: 480px;
+  margin-bottom: 22px;
+}
+
+.hero-signature {
+  font-family: var(--font-script);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  line-height: 1;
+  margin-bottom: 26px;
+  transform: rotate(-3deg);
+  transform-origin: left bottom;
+  user-select: none;
+}
+
+.hero-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-line);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.meta-label {
+  font-size: 0.64rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: var(--color-terracotta);
+}
+
+.meta-value {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+/* Right Hero Column: Portrait Stage */
+.hero-portrait-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  z-index: 4;
+}
+
+.portrait-stage {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Terracotta circular backdrop matching reference */
+.terracotta-circle {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(280px, 32vw, 380px);
+  height: clamp(280px, 32vw, 380px);
+  background-color: var(--color-terracotta);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Chelamsetty Chaitanya transparent cutout photo */
+.chaitanya-photo {
+  position: relative;
+  z-index: 3;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: -10px;
+  filter: drop-shadow(0 16px 24px rgba(20, 20, 20, 0.24));
+  pointer-events: none;
+}
+
+/* Circular Rotating Stamp Badge matching reference */
+.rotating-badge-wrapper {
+  position: absolute;
+  top: 36px;
+  right: -6px;
+  width: 130px;
+  height: 130px;
+  z-index: 5;
+  border-radius: 50%;
+  background: var(--bg-base);
+  border: 1px dashed var(--color-terracotta);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.rotating-badge-wrapper:hover {
+  transform: scale(1.08) rotate(5deg);
+}
+
+.badge-inner-spin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: badgeSpin 22s linear infinite;
+}
+
+.rotating-badge-wrapper:hover .badge-inner-spin {
+  animation-play-state: paused;
+}
+
+@keyframes badgeSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circular-text-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.badge-curved-text {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  fill: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.badge-center-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-sans);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.badge-line-1,
+.badge-line-3 {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--color-terracotta);
+}
+
+.badge-line-2 {
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-text-main);
+}
+
+/* --------------------------------------------------------------------------
+   SHARED SECTION HEADERS & DIVIDERS
+   -------------------------------------------------------------------------- */
+.editorial-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border-line);
+  margin: 36px 0;
+  width: 100%;
+}
+
+.section {
+  padding: 6px 0;
+}
+
+.section-header-row {
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: baseline;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.section-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-sans {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.title-serif {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-weight: 700;
+  color: var(--color-terracotta);
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  max-width: 480px;
+  line-height: 1.5;
+}
+
+.section-action .action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--color-terracotta);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.section-action .action-link:hover {
+  color: var(--color-terracotta-dark);
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   4. SELECTED PROJECTS (4-CARD GRID MATCHING REFERENCE)
+   -------------------------------------------------------------------------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background-color: #121212;
+  border: 1px solid var(--border-line);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.04);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 17, 16, 0.88);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.overlay-tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--color-terracotta);
+  margin-bottom: 6px;
+}
+
+.overlay-desc {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #ECE9E4;
+}
+
+.project-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 14px;
+}
+
+.project-number {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  line-height: 1.25;
+}
+
+.project-category {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   5. SKILLS & EXPERTISE (3 COLUMNS MATCHING REFERENCE)
+   -------------------------------------------------------------------------- */
+.skills-3col-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1.2fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Column 1: Progress Bars */
+.skills-col-progress {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-title-wrap {
+  margin-bottom: 22px;
+}
+
+.col-sub {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.col-serif-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.skill-bars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.skill-name {
+  color: var(--color-text-main);
+}
+
+.skill-pct {
+  color: var(--color-terracotta);
+}
+
+.skill-track {
+  width: 100%;
+  height: 2px;
+  background-color: var(--border-line);
+  position: relative;
+}
+
+.skill-fill {
+  height: 100%;
+  background-color: var(--color-terracotta);
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Column 2: Central Quote */
+.skills-col-quote {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.giant-quote-mark {
+  font-family: var(--font-serif);
+  font-size: 5rem;
+  line-height: 0.9;
+  color: var(--color-terracotta-light);
+  user-select: none;
+  margin-bottom: -10px;
+}
+
+.editorial-quote-text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--color-text-main);
+}
+
+/* Column 3: 4 Feature Items with Terracotta Icons */
+.skills-col-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feature-icon-circle {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background-color: var(--color-terracotta);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(195, 103, 70, 0.28);
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.feature-title {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.feature-desc {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   6. ACHIEVEMENTS & MILESTONES (TESTIMONIALS 3-CARD ROW)
+   -------------------------------------------------------------------------- */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-line);
+  padding: 26px 24px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-quote-mark {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  line-height: 0.8;
+  color: var(--color-terracotta);
+}
+
+.card-quote-text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  flex-grow: 1;
+}
+
+.author-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.author-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-line);
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.author-title {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+}
+
+/* --------------------------------------------------------------------------
+   7. FOOTER & CONTACT (LET'S CREATE SOMETHING GREAT)
+   -------------------------------------------------------------------------- */
+.contact-footer-section {
+  padding-top: 12px;
+}
+
+.footer-3col-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr 1.35fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left CTA Col */
+.footer-cta-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cta-sub {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.footer-cta-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.4vw, 2.9rem);
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.footer-cta-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+}
+
+.footer-strengths-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.strength-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  background-color: var(--color-terracotta-tint);
+  color: var(--color-terracotta-dark);
+  border: 1px solid rgba(195, 103, 70, 0.2);
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+/* Middle QR Code Col */
+.footer-qr-col {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-box-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.qr-image {
+  width: 105px;
+  height: 105px;
+  border: 1px solid var(--border-line);
+  padding: 6px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.qr-pointer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.curved-arrow-svg {
+  width: 44px;
+  height: 28px;
+  color: var(--color-terracotta);
+}
+
+.qr-label-text {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+/* Right Contact List Col */
+.footer-contact-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--color-terracotta);
+  color: var(--color-terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+}
+
+.contact-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.contact-value:hover {
+  color: var(--color-terracotta);
+  text-decoration: underline;
+}
+
+/* Bottom Strip */
+.footer-bottom-bar {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-line);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   8. RESPONSIVE MEDIA QUERIES
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .portfolio-canvas {
+    padding: 20px 30px;
+  }
+  
+  .vertical-sidebar {
+    display: none;
+  }
+  
+  .skills-3col-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-3col-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-canvas {
+    padding: 16px;
+  }
+  
+  .hero-section {
+    margin-top: 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .hero-bio-col {
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-meta-strip {
+    justify-content: center;
+  }
+  
+  .hero-signature {
+    margin: 0 auto 24px auto;
+  }
+  
+  .section-header-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
