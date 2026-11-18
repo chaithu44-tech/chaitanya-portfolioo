@@ -1,616 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chelamsetty Chaitanya — AI &amp; Full-Stack Portfolio</title>
-  <meta
-    name="description"
-    content="Portfolio of Chelamsetty Chaitanya, B.Tech Artificial Intelligence &amp; Machine Learning student at Jain Deemed-to-be University, Bengaluru. Full-stack AI development with Python, FastAPI, Java, C, and Google Gemini API."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelamsetty Chaitanya | AI & Software Developer Portfolio</title>
+  
+  <!-- Typography matching reference: Bebas Neue (Condensed Display), Playfair Display (High-Fashion Serif), Plus Jakarta Sans (Clean Modern Sans), Caveat (Signature Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-  <div class="page-frame">
-    <!-- Left Vertical Rail -->
-    <aside class="side-rail side-rail--left" aria-hidden="true">
-      <div class="rail-track">
-        <span class="rail-text">PYTHON • JAVA • C</span>
-        <span class="rail-line"></span>
-        <span class="rail-text">AI &amp; MACHINE LEARNING</span>
-      </div>
+
+  <!-- Outer Editorial Layout Container -->
+  <div class="portfolio-canvas">
+    
+    <!-- Left Vertical Edge Text -->
+    <aside class="vertical-sidebar left-sidebar" aria-hidden="true">
+      <span class="v-text">MACHINE LEARNING</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">FULL-STACK AI</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">PYTHON ARCHITECTURE</span>
     </aside>
 
-    <!-- Main Editorial Column -->
-    <div class="main-canvas">
-      <!-- Top Utility Bar -->
-      <header class="topbar">
-        <a href="#top" class="topbar-brand">
-          <svg class="starburst-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-            <path
-              d="M12 1v22M1 12h22M4.22 4.22l15.56 15.56M19.78 4.22L4.22 19.78"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-            />
-          </svg>
-          <span>AI &amp; ML DEVELOPER</span>
-        </a>
+    <!-- Right Vertical Edge Text -->
+    <aside class="vertical-sidebar right-sidebar" aria-hidden="true">
+      <span class="v-text">FASTAPI & REST APIS</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">SQLITE & SQLALCHEMY</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">INTELLIGENT SYSTEMS</span>
+    </aside>
 
-        <nav class="topbar-nav" aria-label="Primary Navigation">
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#milestones">Academics</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <!-- Main Content Area -->
+    <main class="main-content">
 
-        <a href="#contact" class="topbar-cta">
-          <span>OPEN TO INTERNSHIPS</span>
-          <span class="arrow" aria-hidden="true">→</span>
-        </a>
+      <!-- Top Header Bar -->
+      <header class="top-nav">
+        <div class="nav-left">
+          <span class="asterisk-symbol">✻</span>
+          <span class="nav-tag">AI & SOFTWARE DEVELOPER</span>
+        </div>
+        <div class="nav-right">
+          <a href="#contact" class="nav-link">
+            <span>AVAILABLE FOR OPPORTUNITIES</span>
+            <span class="nav-arrow">⟶</span>
+          </a>
+        </div>
       </header>
 
+      <!-- Giant Center Display Title -->
+      <section class="banner-title-section">
+        <h1 class="giant-portfolio-title">PORTFOLIO</h1>
+      </section>
+
       <!-- Hero Section -->
-      <section id="top" class="hero">
-        <div class="hero-wordmark-wrap">
-          <h1 class="hero-wordmark" aria-label="Portfolio">PORTFOLIO</h1>
-        </div>
-
+      <section class="hero-section">
         <div class="hero-grid">
-          <div class="hero-intro reveal">
-            <p class="eyebrow">HELLO, I'M</p>
+          
+          <!-- Left Hero Column -->
+          <div class="hero-bio-col">
+            <span class="hero-greeting">HELLO, I'M</span>
             <h2 class="hero-name">
-              CHELAMSETTY<br />
-              CHAITANYA
+              <span>CHELAMSETTY</span>
+              <span>CHAITANYA</span>
             </h2>
-            <p class="hero-role">B.TECH AIML • SOFTWARE &amp; AI DEVELOPER</p>
-            <p class="hero-bio">
-              Motivated B.Tech Artificial Intelligence &amp; Machine Learning student at
-              Jain Deemed-to-be University with programming foundations in Java, Python,
-              and C—focused on building practical full-stack and AI-powered systems.
+            <div class="hero-role-pill">
+              AI & MACHINE LEARNING ENGINEER
+            </div>
+            <p class="hero-intro-text">
+              Motivated B.Tech AIML student with a strong interest in software development, 
+              artificial intelligence, and problem-solving. Possess practical experience developing 
+              full-stack AI-powered platforms, high-throughput backend APIs, and intelligent data systems.
             </p>
-            <div class="hero-signature-row">
-              <span class="signature" aria-label="Signature: Chaitanya">Chaitanya</span>
-              <button type="button" class="pill-btn" data-open-resume>
-                <span>Resume Overview</span>
-                <span aria-hidden="true">↗</span>
-              </button>
+            <div class="hero-signature">
+              <span>Chelamsetty Chaitanya</span>
+            </div>
+            
+            <div class="hero-meta-strip">
+              <div class="meta-item">
+                <span class="meta-label">UNIVERSITY</span>
+                <span class="meta-value">Jain Deemed-to-be University</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">DEGREE</span>
+                <span class="meta-value">B.Tech AIML (2nd Year)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">LOCATION</span>
+                <span class="meta-value">Bengaluru, Karnataka</span>
+              </div>
             </div>
           </div>
 
-          <div class="hero-visual">
-            <div class="terracotta-orb" aria-hidden="true"></div>
+          <!-- Right Hero Column (Terracotta Arch / Circle + Photo Cutout + Revolving Stamp) -->
+          <div class="hero-portrait-col">
+            <div class="portrait-stage">
+              
+              <!-- Terracotta backdrop circle -->
+              <div class="terracotta-circle"></div>
 
-            <!-- Rotating Circular Stamp Badge -->
-            <div class="stamp-badge" aria-label="Open for internships and projects">
-              <svg viewBox="0 0 120 120" class="stamp-ring">
-                <defs>
-                  <path
-                    id="stampCirclePath"
-                    d="M 60, 60 m -44, 0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
-                  />
-                </defs>
-                <text>
-                  <textPath href="#stampCirclePath" startOffset="0%" textLength="266" lengthAdjust="spacing">
-                    • B.TECH AIML • JAIN UNIVERSITY • BENGALURU&#160;
-                  </textPath>
-                </text>
-              </svg>
-              <span class="stamp-center">OPEN FOR<br />INTERNSHIPS</span>
+              <!-- Cutout Image of Chelamsetty Chaitanya -->
+              <img 
+                src="static/images/chaitanya.png" 
+                alt="Chelamsetty Chaitanya" 
+                class="chaitanya-photo"
+              >
+
+              <!-- Rotating Stamp Badge matching reference -->
+              <div class="rotating-badge-wrapper" title="Open for New Opportunities">
+                <div class="badge-inner-spin">
+                  <svg class="circular-text-svg" viewBox="0 0 200 200">
+                    <path id="badge-circle-path" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" fill="transparent" />
+                    <text class="badge-curved-text">
+                      <textPath href="#badge-circle-path" startOffset="0%">
+                        • AVAILABLE FOR OPPORTUNITIES • BENGALURU, INDIA 
+                      </textPath>
+                    </text>
+                  </svg>
+                  <div class="badge-center-content">
+                    <span class="badge-line-1">OPEN</span>
+                    <span class="badge-line-2">FOR NEW</span>
+                    <span class="badge-line-3">ROLES</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
-
-            <img
-              src="assets/portrait.png"
-              alt="Portrait of Chelamsetty Chaitanya in formal black suit"
-              class="hero-portrait"
-            />
           </div>
+
         </div>
       </section>
 
-      <!-- Section 1: Featured Project -->
-      <section id="projects" class="section section--projects">
-        <div class="section-header">
-          <h2 class="section-title">
-            FEATURED<br />
-            <span class="accent">PROJECT</span>
-          </h2>
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
+
+      <!-- SECTION 2: SELECTED PROJECTS -->
+      <section class="section selected-projects-section" id="projects">
+        <div class="section-header-row">
+          <div class="section-title-wrap">
+            <span class="title-sans">SELECTED</span>
+            <h2 class="title-serif">PROJECTS</h2>
+          </div>
           <p class="section-subtitle">
-            <strong>AI-Powered Career Platform</strong> — Team full-stack application featuring
-            multi-role portals, PDF/DOCX resume intelligence, compatibility scoring, and learning roadmaps.
+            A curated showcase of full-stack engineering, artificial intelligence, and algorithmic problem-solving.
           </p>
-          <button type="button" class="text-link-btn" data-open-project="0">
-            <span>FULL CASE STUDY</span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </button>
+          <div class="section-action">
+            <a href="#contact" class="action-link">
+              <span>VIEW ALL MODULES</span>
+              <span class="nav-arrow">⟶</span>
+            </a>
+          </div>
         </div>
 
-        <div class="project-cards">
+        <!-- 4-Card Project Grid matching reference layout -->
+        <div class="projects-grid">
+          
           <!-- Card 01 -->
-          <article class="project-card reveal" data-open-project="0" tabindex="0" role="button">
-            <div class="card-thumb card-thumb--obsidian">
-              <div class="thumb-top-bar">
-                <span>PORTAL ARCHITECTURE</span>
-                <span>JWT • RBAC</span>
-              </div>
-              <div class="thumb-body">
-                <span class="thumb-kicker">THREE DEDICATED PORTALS</span>
-                <h3>STUDENT<br />RECRUITER<br />ADMIN</h3>
-                <p>Role-based access control &amp; secure password hashing.</p>
-              </div>
-              <div class="thumb-footer">
-                <span class="thumb-chip">Explore Module →</span>
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_1.jpg" alt="Career Compatibility Engine" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">WEIGHTED SCORING</span>
+                <p class="overlay-desc">Identifies skill gaps and matches student profiles with competitive industry roles.</p>
               </div>
             </div>
-            <div class="card-meta">
-              <span class="card-index">01</span>
-              <div>
-                <h3 class="card-title">Multi-Portal System</h3>
-                <p class="card-desc">Student, Recruiter &amp; Admin Portals</p>
+            <div class="project-info">
+              <span class="project-number">01</span>
+              <div class="project-text">
+                <h3 class="project-title">Career Engine</h3>
+                <span class="project-category">AI Compatibility & Matching</span>
               </div>
             </div>
           </article>
 
           <!-- Card 02 -->
-          <article class="project-card reveal" data-open-project="1" tabindex="0" role="button">
-            <div class="card-thumb card-thumb--taupe">
-              <div class="thumb-top-bar">
-                <span>AI RESUME ENGINE</span>
-                <span>PYMUPDF • GEMINI</span>
-              </div>
-              <div class="thumb-body">
-                <span class="thumb-kicker">DOCUMENT INTELLIGENCE</span>
-                <h3>PDF / DOCX<br />PARSER &amp;<br />NLP</h3>
-                <p>Extracts skills, projects, certifications &amp; improvement tips.</p>
-              </div>
-              <div class="thumb-footer">
-                <span class="thumb-chip">Local NLP Fallback →</span>
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_2.jpg" alt="Intelligent Resume Parser" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">NLP & GEMINI API</span>
+                <p class="overlay-desc">PDF/DOCX extraction of skills, projects, and AI-tailored resume improvements.</p>
               </div>
             </div>
-            <div class="card-meta">
-              <span class="card-index">02</span>
-              <div>
-                <h3 class="card-title">AI Resume Analysis</h3>
-                <p class="card-desc">Gemini API + Local NLP Fallback</p>
+            <div class="project-info">
+              <span class="project-number">02</span>
+              <div class="project-text">
+                <h3 class="project-title">Resume Parser</h3>
+                <span class="project-category">Gemini AI & Document NLP</span>
               </div>
             </div>
           </article>
 
           <!-- Card 03 -->
-          <article class="project-card reveal" data-open-project="2" tabindex="0" role="button">
-            <div class="card-thumb card-thumb--paper">
-              <div class="thumb-top-bar">
-                <span>MATCHING ENGINE</span>
-                <span>WEIGHTED SCORING</span>
-              </div>
-              <div class="thumb-body">
-                <span class="thumb-kicker">SKILL-GAP ANALYSIS</span>
-                <h3>CAREER<br />MATCH<br />INDEX</h3>
-                <div class="mini-bars" aria-hidden="true">
-                  <span style="width: 88%"></span>
-                  <span style="width: 72%"></span>
-                  <span style="width: 94%"></span>
-                </div>
-              </div>
-              <div class="thumb-footer">
-                <span class="thumb-chip">Role Compatibility →</span>
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_3.jpg" alt="FastAPI Backend Core" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">JWT & SQLALCHEMY</span>
+                <p class="overlay-desc">Role-based access control, SQLite database schemas, and 15 automated test suites.</p>
               </div>
             </div>
-            <div class="card-meta">
-              <span class="card-index">03</span>
-              <div>
-                <h3 class="card-title">Compatibility Scorer</h3>
-                <p class="card-desc">Weighted Skill-Gap &amp; Role Matching</p>
+            <div class="project-info">
+              <span class="project-number">03</span>
+              <div class="project-text">
+                <h3 class="project-title">FastAPI Core</h3>
+                <span class="project-category">Backend APIs & Security</span>
               </div>
             </div>
           </article>
 
           <!-- Card 04 -->
-          <article class="project-card reveal" data-open-project="3" tabindex="0" role="button">
-            <div class="card-thumb card-thumb--charcoal">
-              <div class="thumb-top-bar">
-                <span>BACKEND &amp; QA</span>
-                <span>15 TESTS • DOCKER</span>
-              </div>
-              <div class="thumb-body">
-                <span class="thumb-kicker">FASTAPI &amp; SQLALCHEMY</span>
-                <h3>LEARNING<br />ROADMAP<br />TRACKER</h3>
-                <p>Progress tracking, applications &amp; containerized APIs.</p>
-              </div>
-              <div class="thumb-footer">
-                <span class="thumb-chip">View Stack →</span>
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_4.jpg" alt="Adaptive Learning Roadmaps" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">MULTI-PORTAL SYSTEM</span>
+                <p class="overlay-desc">Personalized learning roadmaps, progress tracking, and recruiter-student pipelines.</p>
               </div>
             </div>
-            <div class="card-meta">
-              <span class="card-index">04</span>
-              <div>
-                <h3 class="card-title">Roadmaps &amp; APIs</h3>
-                <p class="card-desc">FastAPI, SQLite &amp; 15 Automated Tests</p>
+            <div class="project-info">
+              <span class="project-number">04</span>
+              <div class="project-text">
+                <h3 class="project-title">Adaptive Roadmaps</h3>
+                <span class="project-category">Full-Stack Career Platform</span>
               </div>
             </div>
           </article>
-        </div>
 
-        <!-- Tech Stack Strip -->
-        <div class="tech-strip reveal" aria-label="Project Technologies">
-          <span class="tech-strip-label">PROJECT STACK:</span>
-          <div class="tech-pills">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Tailwind CSS</span>
-            <span>SQLite</span>
-            <span>SQLAlchemy</span>
-            <span>Google Gemini API</span>
-            <span>PyMuPDF</span>
-            <span>Docker</span>
-          </div>
         </div>
       </section>
 
-      <!-- Section 2: Skills & Expertise -->
-      <section id="skills" class="section section--skills">
-        <div class="skills-grid">
-          <!-- Left Column: Technical Skills -->
-          <div class="skills-col-left reveal">
-            <h2 class="section-title">
-              SKILLS &amp;<br />
-              <span class="accent">EXPERTISE</span>
-            </h2>
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
 
-            <div class="skill-bars">
+      <!-- SECTION 3: SKILLS & EXPERTISE -->
+      <section class="section skills-section" id="skills">
+        <div class="skills-3col-grid">
+          
+          <!-- Column 1: Skill Progress Bars -->
+          <div class="skills-col-progress">
+            <div class="col-title-wrap">
+              <span class="col-sub">SKILLS &</span>
+              <h3 class="col-serif-title">EXPERTISE</h3>
+            </div>
+            
+            <div class="skill-bars-list">
+              
               <div class="skill-row">
-                <span class="skill-name">PYTHON</span>
-                <span class="skill-line"><span class="skill-fill" style="--w: 92%"></span></span>
-                <span class="skill-tag">AI &amp; Backend</span>
+                <div class="skill-header">
+                  <span class="skill-name">PYTHON & FASTAPI</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 95%;"></div>
+                </div>
               </div>
+
               <div class="skill-row">
-                <span class="skill-name">JAVA &amp; C</span>
-                <span class="skill-line"><span class="skill-fill" style="--w: 85%"></span></span>
-                <span class="skill-tag">Core Languages</span>
+                <div class="skill-header">
+                  <span class="skill-name">JAVA & C PROGRAMMING</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 90%;"></div>
+                </div>
               </div>
+
               <div class="skill-row">
-                <span class="skill-name">FASTAPI</span>
-                <span class="skill-line"><span class="skill-fill" style="--w: 88%"></span></span>
-                <span class="skill-tag">REST APIs</span>
+                <div class="skill-header">
+                  <span class="skill-name">AI & GEMINI API INTEGRATION</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 90%;"></div>
+                </div>
               </div>
+
               <div class="skill-row">
-                <span class="skill-name">JS / HTML / CSS</span>
-                <span class="skill-line"><span class="skill-fill" style="--w: 86%"></span></span>
-                <span class="skill-tag">Frontend</span>
+                <div class="skill-header">
+                  <span class="skill-name">SQLITE & SQLALCHEMY ORM</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 88%;"></div>
+                </div>
               </div>
+
               <div class="skill-row">
-                <span class="skill-name">TAILWIND CSS</span>
-                <span class="skill-line"><span class="skill-fill" style="--w: 84%"></span></span>
-                <span class="skill-tag">UI Systems</span>
+                <div class="skill-header">
+                  <span class="skill-name">HTML, CSS & TAILWIND CSS</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 88%;"></div>
+                </div>
               </div>
+
               <div class="skill-row">
-                <span class="skill-name">SQLITE &amp; SQLALCHEMY</span>
-                <span class="skill-line"><span class="skill-fill" style="--w: 82%"></span></span>
-                <span class="skill-tag">Database</span>
+                <div class="skill-header">
+                  <span class="skill-name">DOCKER & DEV TOOLS</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 82%;"></div>
+                </div>
               </div>
-              <div class="skill-row">
-                <span class="skill-name">GEMINI API &amp; DOCKER</span>
-                <span class="skill-line"><span class="skill-fill" style="--w: 85%"></span></span>
-                <span class="skill-tag">GenAI &amp; DevOps</span>
-              </div>
+
             </div>
           </div>
 
-          <!-- Center Column: Editorial Statement -->
-          <div class="skills-col-center reveal">
-            <span class="quote-mark" aria-hidden="true">“</span>
-            <blockquote class="editorial-quote">
-              I build intelligent, full-stack software solutions that combine clean backend
-              architecture with practical AI—solving real problems through thoughtful engineering.
+          <!-- Column 2: Large Central Editorial Quote -->
+          <div class="skills-col-quote">
+            <span class="giant-quote-mark">“</span>
+            <blockquote class="editorial-quote-text">
+              I architect and build full-stack intelligent systems that are not only computationally robust, but also scalable, secure, and impactful.
             </blockquote>
-            <p class="quote-caption">
-              B.Tech AIML • 2nd Year, 3rd Semester • Seeking Industry Opportunities
-            </p>
           </div>
 
-          <!-- Right Column: Personal Strengths & Pillars -->
-          <div class="skills-col-right reveal">
-            <div class="pillar-item">
-              <div class="pillar-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z" />
+          <!-- Column 3: 4 Feature Items with Terracotta Icons -->
+          <div class="skills-col-features">
+            
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <!-- Monitor/Screen icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
                 </svg>
               </div>
-              <div>
-                <h3>PROBLEM-SOLVING</h3>
-                <p>Structured, analytical approach to algorithms, debugging, and software architecture.</p>
+              <div class="feature-content">
+                <h4 class="feature-title">INTELLIGENT AI INTEGRATION</h4>
+                <p class="feature-desc">Google Gemini API pipelines with local NLP fallback for resilient automation.</p>
               </div>
             </div>
 
-            <div class="pillar-item">
-              <div class="pillar-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <polyline points="16 18 22 12 16 6" />
-                  <polyline points="8 6 2 12 8 18" />
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <!-- Code icon </ > -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
                 </svg>
               </div>
-              <div>
-                <h3>FULL-STACK &amp; AI ENGINEERING</h3>
-                <p>Integrating FastAPI, SQLAlchemy, JWT security, and Google Gemini API with local NLP fallbacks.</p>
+              <div class="feature-content">
+                <h4 class="feature-title">ROBUST BACKEND APIS</h4>
+                <p class="feature-desc">High-throughput asynchronous services using Python, FastAPI, and SQLAlchemy.</p>
               </div>
             </div>
 
-            <div class="pillar-item">
-              <div class="pillar-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <!-- Security/Shield icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                 </svg>
               </div>
-              <div>
-                <h3>TEAMWORK &amp; COLLABORATION</h3>
-                <p>Proven ability to conceptualize, architect, and pitch solutions with teams in hackathons and projects.</p>
+              <div class="feature-content">
+                <h4 class="feature-title">ENTERPRISE SECURITY</h4>
+                <p class="feature-desc">JWT authentication, password hashing, and role-based access control (RBAC).</p>
               </div>
             </div>
 
-            <div class="pillar-item">
-              <div class="pillar-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <!-- Rocket/Performance icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                  <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                  <path d="M9 12H4s.55-3.03 2-4.5c1.45-1.47 4.5-2 4.5-2"/>
+                  <path d="M12 15v5s3.03-.55 4.5-2c1.47-1.45 2-4.5 2-4.5"/>
                 </svg>
               </div>
-              <div>
-                <h3>QUICK LEARNING &amp; ADAPTABILITY</h3>
-                <p>Driven by curiosity for emerging technologies and rapid mastery of modern tools.</p>
+              <div class="feature-content">
+                <h4 class="feature-title">PERFORMANCE & QUALITY</h4>
+                <p class="feature-desc">15 automated test suites, Docker containerization, and data-driven scoring.</p>
               </div>
             </div>
+
           </div>
+
         </div>
       </section>
 
-      <!-- Section 3: Academic & Milestones -->
-      <section id="milestones" class="section section--milestones">
-        <div class="section-header">
-          <h2 class="section-title">
-            ACADEMIC &amp;<br />
-            <span class="accent">MILESTONES</span>
-          </h2>
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
+
+      <!-- SECTION 4: ACHIEVEMENTS & MILESTONES (Matching "WHAT CLIENTS SAY") -->
+      <section class="section testimonials-section" id="milestones">
+        <div class="section-header-row">
+          <div class="section-title-wrap">
+            <span class="title-sans">ACHIEVEMENTS &</span>
+            <h2 class="title-serif">MILESTONES</h2>
+          </div>
           <p class="section-subtitle">
-            Pursuing <strong>B.Tech in Artificial Intelligence &amp; Machine Learning</strong> at
-            Jain Deemed-to-be University, Bengaluru (2nd Year, 3rd Semester).
+            Validated milestones, competitive hackathon performance, and consistent academic distinction.
           </p>
-          <button type="button" class="text-link-btn" data-open-resume>
-            <span>VIEW CREDENTIALS</span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </button>
+          <div class="section-action">
+            <a href="#contact" class="action-link">
+              <span>ACADEMIC RECORD</span>
+              <span class="nav-arrow">⟶</span>
+            </a>
+          </div>
         </div>
 
-        <div class="milestone-cards">
-          <article class="milestone-card reveal">
-            <span class="card-quote-mark" aria-hidden="true">“</span>
-            <p class="milestone-text">
-              Collaborated within a team to conceptualize, architect, and pitch a technical software
-              solution, successfully qualifying through the Smart India Hackathon selection evaluation stage.
+        <!-- 3 Milestone Cards matching reference testimonials -->
+        <div class="testimonials-grid">
+          
+          <!-- Card 1: Smart India Hackathon -->
+          <div class="testimonial-card">
+            <span class="card-quote-mark">“</span>
+            <p class="card-quote-text">
+              Collaborated within a multidisciplinary team to conceptualize, architect, and pitch a technical software solution, successfully qualifying through the selection evaluation stage.
             </p>
-            <div class="milestone-footer">
-              <div class="milestone-badge">SIH</div>
-              <div>
-                <h4>Smart India Hackathon</h4>
-                <p>Qualified Participant</p>
+            <div class="author-block">
+              <img src="static/images/badge_sih.png" alt="Smart India Hackathon" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Smart India Hackathon</h4>
+                <span class="author-title">Qualified Participant • National Level</span>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="milestone-card reveal">
-            <span class="card-quote-mark" aria-hidden="true">“</span>
-            <p class="milestone-text">
-              Maintained strong academic performance in B.Tech Artificial Intelligence &amp; Machine
-              Learning at Jain Deemed-to-be University, earning 8.625 SGPA in Semester 1 and 9.00 SGPA in Semester 2.
+          <!-- Card 2: Academic Excellence -->
+          <div class="testimonial-card">
+            <span class="card-quote-mark">“</span>
+            <p class="card-quote-text">
+              Maintained strong academic performance with 8.625 SGPA in Semester 1 and 9.00 SGPA in Semester 2 in B.Tech Artificial Intelligence & Machine Learning.
             </p>
-            <div class="milestone-footer">
-              <div class="milestone-badge">9.00</div>
-              <div>
-                <h4>B.Tech AIML Excellence</h4>
-                <p>Sem 1: 8.625 • Sem 2: 9.00 SGPA</p>
+            <div class="author-block">
+              <img src="static/images/badge_jain.png" alt="Jain University" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Jain Deemed-to-be University</h4>
+                <span class="author-title">Sem 2: 9.00 SGPA • Sem 1: 8.625 SGPA</span>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="milestone-card reveal">
-            <span class="card-quote-mark" aria-hidden="true">“</span>
-            <p class="milestone-text">
-              Built a strong pre-university analytical foundation across mathematics and sciences,
-              achieving 92.5% in 12th Standard and 83% in 10th Standard prior to university studies.
+          <!-- Card 3: Foundational Academics -->
+          <div class="testimonial-card">
+            <span class="card-quote-mark">“</span>
+            <p class="card-quote-text">
+              Demonstrated strong analytical problem-solving with 92.5% in 12th Standard and 83% in 10th Standard board examinations, establishing solid engineering foundations.
             </p>
-            <div class="milestone-footer">
-              <div class="milestone-badge">92.5%</div>
-              <div>
-                <h4>12th &amp; 10th Standard</h4>
-                <p>12th: 92.5% • 10th: 83%</p>
+            <div class="author-block">
+              <img src="static/images/badge_acad.png" alt="Academic Distinction" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Academic Foundation</h4>
+                <span class="author-title">12th Grade: 92.5% • 10th Grade: 83%</span>
               </div>
             </div>
-          </article>
+          </div>
+
         </div>
       </section>
 
-      <!-- Section 4: Footer / Contact -->
-      <footer id="contact" class="section section--footer">
-        <div class="footer-grid">
-          <div class="footer-cta reveal">
-            <h2 class="section-title">
-              LET'S CREATE<br />
-              <span class="accent">SOMETHING GREAT</span>
-            </h2>
-            <p class="footer-note">
-              Looking for internships, software development roles, or AI/ML collaborations? Let's connect and build something impactful.
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
+
+      <!-- SECTION 5: FOOTER & CONTACT (LET'S CREATE SOMETHING GREAT) -->
+      <footer class="contact-footer-section" id="contact">
+        <div class="footer-3col-grid">
+          
+          <!-- Left Column: Headline & Subtitle -->
+          <div class="footer-cta-col">
+            <span class="footer-cta-sub">LET'S CREATE</span>
+            <h2 class="footer-cta-title">SOMETHING GREAT</h2>
+            <p class="footer-cta-desc">
+              Have a project, internship, or full-time opportunity in mind? Let's build something that makes a lasting impact.
             </p>
-          </div>
-
-          <div class="footer-qr reveal">
-            <div class="qr-box">
-              <img src="assets/qr-contact.svg" alt="QR Code to email chaithuniva44@gmail.com" />
-            </div>
-            <div class="qr-caption">
-              <span class="qr-label">SCAN TO EMAIL<br />DIRECTLY</span>
-              <svg class="qr-arrow" viewBox="0 0 42 26" width="38" height="24" fill="none" aria-hidden="true">
-                <path
-                  d="M40 4 C30 22, 16 24, 5 16 M5 16 L11 14 M5 16 L8 22"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <div class="footer-strengths-tags">
+              <span class="strength-tag">Problem-solving</span>
+              <span class="strength-tag">Quick Learning</span>
+              <span class="strength-tag">Teamwork</span>
+              <span class="strength-tag">Adaptability</span>
             </div>
           </div>
 
-          <div class="footer-contact reveal">
-            <a href="mailto:chaithuniva44@gmail.com" class="contact-item">
-              <span class="contact-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <rect x="3" y="5" width="18" height="14" rx="2" />
-                  <polyline points="3 7 12 13 21 7" />
+          <!-- Middle Column: QR Code + Arrow + Caption -->
+          <div class="footer-qr-col">
+            <div class="qr-box-wrapper">
+              <img src="static/images/qr_code.png" alt="Scan to connect with Chelamsetty Chaitanya" class="qr-image">
+              <div class="qr-pointer-block">
+                <!-- Hand-drawn curved arrow SVG matching reference -->
+                <svg class="curved-arrow-svg" viewBox="0 0 60 40" fill="none" stroke="currentColor">
+                  <path d="M 10,35 Q 25,5 50,20" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  <path d="M 45,12 L 52,21 L 40,24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              </span>
-              <span class="contact-text">chaithuniva44@gmail.com</span>
-            </a>
-
-            <a href="tel:+916302183467" class="contact-item">
-              <span class="contact-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </span>
-              <span class="contact-text">+91 6302183467</span>
-            </a>
-
-            <div class="contact-item">
-              <span class="contact-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </span>
-              <span class="contact-text">Bengaluru, Karnataka</span>
+                <div class="qr-label-text">
+                  <span>SCAN TO CONNECT</span>
+                  <span>WITH ME DIRECTLY</span>
+                </div>
+              </div>
             </div>
-
-            <button type="button" class="copy-email-btn" id="copyEmailBtn">
-              Copy Email Address
-            </button>
           </div>
+
+          <!-- Right Column: Contact Details with Icons -->
+          <div class="footer-contact-col">
+            <ul class="contact-list">
+              
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <!-- Mail Icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">EMAIL ADDRESS</span>
+                  <a href="mailto:chaithuniva44@gmail.com" class="contact-value">chaithuniva44@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <!-- Phone Icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">PHONE NUMBER</span>
+                  <a href="tel:6302183467" class="contact-value">+91 6302183467</a>
+                </div>
+              </li>
+
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <!-- Map Pin Icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">LOCATION</span>
+                  <span class="contact-value">Bengaluru, Karnataka (Remote / Worldwide)</span>
+                </div>
+              </li>
+
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <!-- Academic / University Icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">CURRENT STUDY</span>
+                  <span class="contact-value">Jain Deemed-to-be University</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
         </div>
 
-        <div class="colophon">
-          <span>CHELAMSETTY CHAITANYA — B.TECH AIML PORTFOLIO</span>
-          <span>JAIN DEEMED-TO-BE UNIVERSITY, BENGALURU</span>
+        <!-- Bottom Copyright & Credit Strip -->
+        <div class="footer-bottom-bar">
+          <span>© 2026 CHELAMSETTY CHAITANYA. ALL RIGHTS RESERVED.</span>
+          <span>B.TECH ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</span>
         </div>
       </footer>
-    </div>
 
-    <!-- Right Vertical Rail -->
-    <aside class="side-rail side-rail--right" aria-hidden="true">
-      <div class="rail-track">
-        <span class="rail-text">FULL-STACK DEVELOPMENT</span>
-        <span class="rail-line"></span>
-        <span class="rail-text">BENGALURU, INDIA</span>
-      </div>
-    </aside>
+    </main>
+
   </div>
 
-  <!-- Interactive Case Study Modal -->
-  <div class="modal-backdrop" id="projectModal" hidden aria-modal="true" role="dialog" aria-labelledby="modalTitle">
-    <div class="modal-panel">
-      <button type="button" class="modal-close" data-close-modal aria-label="Close modal">✕</button>
-      <p class="eyebrow">TEAM PROJECT • FULL-STACK DEVELOPMENT</p>
-      <h2 id="modalTitle" class="modal-title">AI-Powered Career Platform</h2>
-      <p class="modal-lead" id="modalHighlight">
-        Dedicated Student, Recruiter, and Administrator portals backed by Python, FastAPI, SQLAlchemy, and Google Gemini AI.
-      </p>
-
-      <div class="modal-tabs" role="tablist">
-        <button type="button" class="modal-tab is-active" data-tab="0">01 Portals &amp; Auth</button>
-        <button type="button" class="modal-tab" data-tab="1">02 AI Resume Parser</button>
-        <button type="button" class="modal-tab" data-tab="2">03 Compatibility Score</button>
-        <button type="button" class="modal-tab" data-tab="3">04 Roadmaps &amp; QA</button>
-      </div>
-
-      <div class="modal-tab-detail" id="modalTabDetail"></div>
-
-      <h3 class="modal-subhead">Complete Key Contributions</h3>
-      <ul class="modal-bullets">
-        <li>Developed a full-stack AI-powered career platform featuring dedicated student, recruiter, and administrator portals.</li>
-        <li>Implemented PDF/DOCX resume parsing and AI-based analysis to extract skills, projects, certifications, and provide resume improvement suggestions.</li>
-        <li>Built a weighted career compatibility scoring system to identify skill gaps and match student profiles with industry roles.</li>
-        <li>Designed personalized learning roadmaps with progress tracking and job/internship application management.</li>
-        <li>Implemented secure authentication using JWT, password hashing, and role-based access control.</li>
-        <li>Developed backend APIs using Python and FastAPI, with SQLite and SQLAlchemy for database management.</li>
-        <li>Integrated Google Gemini API with a local NLP fallback and created 15 automated tests.</li>
-      </ul>
-
-      <div class="modal-stack">
-        <span class="tech-strip-label">TECHNOLOGIES:</span>
-        <div class="tech-pills">
-          <span>Python</span><span>FastAPI</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
-          <span>Tailwind CSS</span><span>SQLite</span><span>SQLAlchemy</span><span>Google Gemini API</span>
-          <span>PyMuPDF</span><span>Docker</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Resume Summary Modal -->
-  <div class="modal-backdrop" id="resumeModal" hidden aria-modal="true" role="dialog" aria-labelledby="resumeModalTitle">
-    <div class="modal-panel">
-      <button type="button" class="modal-close" data-close-modal aria-label="Close modal">✕</button>
-      <p class="eyebrow">ACADEMIC &amp; RESUME SUMMARY</p>
-      <h2 id="resumeModalTitle" class="modal-title">Chelamsetty Chaitanya</h2>
-      <p class="modal-lead">
-        B.Tech – Artificial Intelligence &amp; Machine Learning • Jain Deemed-to-be University, Bengaluru (2nd Year, 3rd Semester)
-      </p>
-
-      <div class="resume-metrics">
-        <div class="metric-box">
-          <span class="metric-val">9.00</span>
-          <span class="metric-lbl">2nd Sem SGPA</span>
-        </div>
-        <div class="metric-box">
-          <span class="metric-val">8.625</span>
-          <span class="metric-lbl">1st Sem SGPA</span>
-        </div>
-        <div class="metric-box">
-          <span class="metric-val">92.5%</span>
-          <span class="metric-lbl">12th Standard</span>
-        </div>
-        <div class="metric-box">
-          <span class="metric-val">83%</span>
-          <span class="metric-lbl">10th Standard</span>
-        </div>
-      </div>
-
-      <div class="resume-summary-grid">
-        <div>
-          <h3 class="modal-subhead">Technical Skills</h3>
-          <p class="modal-text">Java • Python • C • FastAPI • JavaScript • HTML • CSS • Tailwind CSS • SQLite • SQLAlchemy • Google Gemini API • PyMuPDF • Docker</p>
-        </div>
-        <div>
-          <h3 class="modal-subhead">Personal Strengths</h3>
-          <p class="modal-text">Problem-solving • Quick learning • Teamwork and collaboration • Adaptability • Interest in emerging technologies</p>
-        </div>
-      </div>
-
-      <div class="modal-actions">
-        <button type="button" class="pill-btn pill-btn--dark" onclick="window.print()">Print / Save Page</button>
-        <a href="mailto:chaithuniva44@gmail.com" class="pill-btn">Email Chaitanya →</a>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="static/js/main.js"></script>
 </body>
 </html>
